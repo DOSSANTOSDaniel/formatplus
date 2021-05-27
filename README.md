@@ -8,9 +8,9 @@ Ce script peut fonctionner de deux manières :
 Le script doit être lancé en tant que ROOT !                                                 
                                                   
 Options:                                          
-    -h    : Aide.
-    -v    : Affiche la version du script.
-    -l    : Ajoute le formatage long du disque.
- -d <sdX> : Permet de passer en argument le nom du disque exemple : sda, sdb...
+*    -h    : Aide.
+*    -v    : Affiche la version du script.
+*    -l    : Ajoute le formatage long du disque.
+* -d <sdX> : Permet de passer en argument le nom du disque exemple : sda, sdb...
 
 Usage: ./formatplus.sh -[l|h|v] -d <sdX>                                            
