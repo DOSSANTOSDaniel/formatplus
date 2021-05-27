@@ -246,9 +246,9 @@ then
     read -p '---> Taper sur entrée pour valider (Ctrl+c pour quitter)'
     echo
   fi
-  
-  size_device=$(blockdev --getsize64 /dev/${disk}) # en octets
-  size_block=$(stat -c "%o" /dev/${disk}) # en octets
+  # I have a doubt about the calculation ???
+  size_device=$(blockdev --getsize64 /dev/${disk}) # octets
+  size_block=$(stat -c "%o" /dev/${disk}) # octets
   count_value=$((size_device / size_block))
   
   dd if=/dev/zero of=/dev/${disk} bs=$size_block count=$count_value status=progress conv=noerror,sync  
