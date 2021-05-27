@@ -236,7 +236,7 @@ then
 fi
 
 #data for remove disque
-data_disk="$(lsblk -ldn -I 8 -o SIZE,MODEL /dev/sdb)"
+data_disk="$(lsblk -ldn -I 8 -o SIZE,MODEL /dev/${disk})"
   
 if [[ $format_long == 'true' ]]
 then
